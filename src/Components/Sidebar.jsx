@@ -95,7 +95,6 @@ export default function Sidebar() {
     const conv = conversations.find((c) => c.friend.id === friendId);
     if (conv) {
       // set conv als current conversation
-      console.log("exists");
       dispatch({ type: "SET_CURRENT_CHAT", payload: conv });
       localStorage.setItem("convId", JSON.stringify(conv.id));
       setNewChat(false);
@@ -118,6 +117,8 @@ export default function Sidebar() {
     await logout();
     dispatch(signOut());
   };
+
+  console.log(chats);
 
   return (
     <div className="sidebar">

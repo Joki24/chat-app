@@ -1,6 +1,6 @@
 import React from "react";
 import Avatar from "./Avatar";
-// import { format } from "timeago.js";
+import { format } from "timeago.js";
 
 export default function ChatItem({ chat, active, selectConversation }) {
   let lastMessage = "";
@@ -24,7 +24,7 @@ export default function ChatItem({ chat, active, selectConversation }) {
           <span className="username">{chat?.friend?.username}</span>
           {chat?.last?.createdAt && (
             <span className="timeline">
-              {format(chat?.last?.createdAt?.toDate())}
+              {format (chat?.last?.createdAt?.toDate())}
             </span>
           )}
         </div>

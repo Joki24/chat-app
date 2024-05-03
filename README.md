@@ -1,8 +1,15 @@
-# React + Vite
+# chat-app project
+Lokkerroom Fullstack mission: 
+Code a frontend UI for it so users from all over the world will be able to chat using your app.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+TO BE IMPLEMENTED
 
-Currently, two official plugins are available:
+Frontend
+- Improve the design so it looks like a Whatsapp clone app
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+Backend
+- Function to delete messages
+- Function to delete conversation
+- Function to create a group chat
+
