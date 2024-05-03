@@ -91,9 +91,11 @@ export default function Sidebar() {
   const handleCreateConversation = async (friendId) => {
     if (auth == null) return;
     // check if conversation exists
+    console.log(friendId);
     const conv = conversations.find((c) => c.friend.id === friendId);
     if (conv) {
       // set conv als current conversation
+      console.log("exists");
       dispatch({ type: "SET_CURRENT_CHAT", payload: conv });
       localStorage.setItem("convId", JSON.stringify(conv.id));
       setNewChat(false);
